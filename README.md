@@ -117,7 +117,7 @@ The process is intended to be as lightweight as reasonable for the present circu
 
 ## Inspiration
 
-React's RFC process owes its inspiration to the [Yarn RFC process], [Rust RFC process], and [Ember RFC process].
+ArchGuard's RFC process owes its inspiration to the [Rust RFC process], and [React RFC process].
 
 [React RFC process]: https://github.com/reactjs/rfcs
 [Rust RFC process]: https://github.com/rust-lang/rfcs
