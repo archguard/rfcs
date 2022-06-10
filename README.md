@@ -2,7 +2,7 @@
 
 Many changes, including bug fixes and documentation improvements can be implemented and reviewed via the normal GitHub pull request workflow.
 
-Some changes though are "substantial", and we ask that these be put through a bit of a design process and produce a consensus among the React core team.
+Some changes though are "substantial", and we ask that these be put through a bit of a design process and produce a consensus among the ArchGuard core team.
 
 The "RFC" (request for comments) process is intended to provide a consistent and controlled path for new features to enter the project.
 
@@ -10,7 +10,7 @@ The "RFC" (request for comments) process is intended to provide a consistent and
 ## When you need to follow this process
 
 You should consider using this process if you intend to make "substantial"
-changes to React or its documentation. Some examples that would benefit
+changes to ArchGuard or its documentation. Some examples that would benefit
 from an RFC are:
 
   - A new feature that creates new API surface area, and would
@@ -18,7 +18,7 @@ from an RFC are:
   - The removal of features that already shipped as part of the release
      channel.
   - The introduction of new idiomatic usage or conventions, even if they
-     do not include code changes to React itself.
+     do not include code changes to ArchGuard itself.
 
 Some changes do not require an RFC:
 
@@ -26,8 +26,8 @@ Some changes do not require an RFC:
   - Addition or removal of warnings
   - Additions that strictly improve objective, numerical quality
   criteria (speedup, better browser support)
-  - Additions only likely to be _noticed by_ other implementors-of-React,
-  invisible to users-of-React.
+  - Additions only likely to be _noticed by_ other implementors-of-ArchGuard,
+  invisible to users-of-ArchGuard.
 
 ## Before creating an RFC
 
@@ -44,7 +44,7 @@ Although there is no single way to prepare for submitting an RFC, it is generall
 In short, to get a major feature added to ArchGuard, one usually first gets
 the RFC merged into the RFC repo as a markdown file. At that point the RFC
 is 'active' and may be implemented with the goal of eventual inclusion
-into React.
+into ArchGuard.
 
 * Fork the RFC repo http://github.com/archguard/rfcs
 * Copy `0000-template.md` to `text/0000-my-feature.md` (where
@@ -60,9 +60,9 @@ to revise it in response.
 are much more likely to make progress than those that don't receive any
 comments.
 * Eventually, the team will decide whether the RFC is a candidate
-for inclusion in React. Note that a team review may take a long time,
+for inclusion in ArchGuard. Note that a team review may take a long time,
 and we suggest that you ask members of the community to review it first.
-* RFCs that are candidates for inclusion in React will enter a "final comment
+* RFCs that are candidates for inclusion in ArchGuard will enter a "final comment
 period" lasting 3 calendar days. The beginning of this period will be signaled with a
 comment and tag on the RFCs pull request.
 * An RFC can be modified based upon feedback from the team and community.
@@ -78,7 +78,7 @@ become 'active'.
 ## The RFC lifecycle
 
 Once an RFC becomes active, then authors may implement it and submit the
-feature as a pull request to the React repo. Becoming 'active' is not a rubber
+feature as a pull request to the ArchGuard repo. Becoming 'active' is not a rubber
 stamp, and in particular still does not mean the feature will ultimately
 be merged; it does mean that the core team has agreed to it in principle
 and are amenable to merging it.
