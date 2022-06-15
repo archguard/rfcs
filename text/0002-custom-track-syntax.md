@@ -21,13 +21,31 @@ it can be:
 
 # Basic example
 
-## count files
+## select
+
+```
+# all
+system: @all
+
+# context
+context: contextName
+
+# system
+system: systemName
+
+# sub-system
+system: systemName or ID ?
+```
+
+## type
+
+### count files
 
 ```
 type:sourcecode lang:ts file:xxx 
 ```
 
-## scene: SCA
+### scene: SCA
 
 Log4j
 
@@ -35,10 +53,18 @@ Log4j
 type:sca artifact:org\.apache\.logging version?regexp
 ```
 
-## count: API
+### count: API
 
 ```
 type:api     patterntype:regexp
+```
+
+## expression
+
+like
+
+```
+artifact.name + "$artifact.id" ..
 ```
 
 # Motivation
