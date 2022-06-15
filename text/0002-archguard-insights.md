@@ -24,17 +24,17 @@ it can be:
 ## select
 
 ```
-# all
-system: @all
-
 # context
 context: contextName
 
-# system
-system: systemName
+# all
+system: @all
 
-# sub-system
-system: systemName or ID ?
+# system by name
+system: "systemName"
+
+# system by id
+system: ${number}
 ```
 
 ## type
@@ -49,8 +49,16 @@ type:sourcecode lang:ts file:xxx
 
 Log4j
 
+need lookup for all group
+
 ```
-type:sca artifact:org\.apache\.logging version?regexp
+type:sca group:org\.apache\.logging version?regexp
+```
+
+count deps with version?
+
+```
+type:sca group:
 ```
 
 ### count: API
