@@ -85,9 +85,35 @@ In order to manage/custom all codes with ArchGuard.
 - insights API for save system.
 - online DSL verify?
 
-### Implementation
+# Implementation
 
-TODO
+## Implementation Patterns
+
+1. filter before query.  manual filter by developer in .
+2. filter with query.
+3. query after filter.
+
+### Filter before Query
+
+todo
+
+### Filter with Query
+
+### Query after Filter.
+
+Code Query Exression?
+
+```
+SELECT COUNT (DISTINCT id) WHERE lang=ts file=like?
+```
+
+class="FileController"
+
+method=""
+
+version >= ""? `select all and then filter` ?
+
+to AST and validate?
 
 # Drawbacks
 
