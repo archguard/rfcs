@@ -34,7 +34,7 @@ ArchGuard 将是一个“数据驱动”的架构守护工具，Mysql 并不适�
 
 # Detailed design (TODO)
 
-*upload later*
+![overall architecture](https://user-images.githubusercontent.com/24785373/175776127-a37da4b7-d0f7-4912-bde9-f880b69653aa.png)
 <https://github.com/Anddd7/architecture-diagram/blob/master/archguard-r2-v1.excalidraw>
 
 # Drawbacks
