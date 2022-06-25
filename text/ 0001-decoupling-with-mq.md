@@ -53,7 +53,7 @@ We mush evolute to the streaming flow, if we want to go futher.
 - New modules & packages
 - New deployments (docker & k8s)
 
-# How we teach this
+# How we teach this (TODO)
 
 What names and terminology work best for these concepts and why? How is this
 idea best presented? As a continuation of existing ArchGuard patterns?
