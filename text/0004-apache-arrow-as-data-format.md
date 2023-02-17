@@ -105,7 +105,14 @@ fun analyse(channel: Channel<CodeDataStruct>) = runBlocking {
 
 # Drawbacks
 
-修改成本大，需要修改 Scanner CLI、Server、Plugin 等多个模块。
+需要注意：
+
+1. 添加特性需要修改 Scanner CLI、Server、Plugin 等多个模块。
+2. 当使用 Kotlin Dataframe 时，还需要注意以下几点：
+    - 需要将数据类声明为 data class，以便 Dataframe 可以识别数据类的属性。
+    - 集合类型应该是 List、Map 或 ArrayList，而不是 Array，因为 Dataframe 对于集合的处理是基于 Java Collections Framework 的，而不是基于原生数组。
+    - 数据类的属性类型应该是 Kotlin 原生类型或者是具有无参构造函数的类，这是因为 Dataframe 可以直接将这些类型映射到 Arrow 数据类型，而无需进行其他转换。
+    - 如果数据类的属性类型是一个复合类型，比如一个列表或一个嵌套的数据类，需要使用 Arrow 的数据类型来定义这个属性的类型。
 
 # Alternatives
 
