@@ -49,6 +49,24 @@ df.groupBy { pclass }.aggregate {
 }
 ```
 
+基于 Chapi 的示例：
+
+```kotlin
+val ds = listOf(
+    CodeDataStruct(
+        NodeName = "Main",
+        Functions = listOf(CodeFunction(Name = "main")),
+    )
+)
+
+val dataframe = ds.toDataFrame()
+
+dataframe
+    .filter { it[CodeDataStruct::Functions].isNotEmpty() }
+    .filter { it[CodeDataStruct::Functions].any { function -> function.Name == "main" } }
+    .print()
+```
+
 # Motivation
 
 主要原因有：
